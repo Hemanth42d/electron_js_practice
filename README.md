@@ -98,13 +98,6 @@ electron-practice/
 - Simple UI with security headers
 - Displays application content and version information
 
-## 🔒 Security Features
-
-- **Content Security Policy**: Prevents XSS attacks
-- **Context Isolation**: Separates main and renderer contexts
-- **Preload Scripts**: Secure communication between processes
-- **Disabled Node Integration**: Renderer process runs in secure context
-
 ## 📦 Dependencies
 
 ### Main Dependencies
@@ -123,33 +116,6 @@ electron-practice/
 - `npm start`: Start the application in development mode
 - `npm run package`: Package the application for distribution
 - `npm run make`: Create platform-specific installers
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Application doesn't show content**: Ensure `render.js` is properly loaded in `index.html`
-2. **Version information not displaying**: Check that the preload script is correctly configured
-3. **Build fails with RPM errors**: Install RPM tools on Linux: `sudo apt-get install rpm`
-4. **Missing description error**: Ensure `package.json` has a valid description field
-
-### System Requirements
-
-- **Linux**: Requires `rpm` package for creating RPM distributables
-- **Windows**: Requires Visual Studio Build Tools for native modules
-- **macOS**: Requires Xcode Command Line Tools
-
-## 📝 License
-
-This project is licensed under the ISC License.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes and commit: `git commit -m 'Add feature'`
-4. Push to the branch: `git push origin feature-name`
-5. Submit a pull request
 
 ## 📚 Learn More
 
